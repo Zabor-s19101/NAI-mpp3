@@ -1,0 +1,9 @@
+Opis
+Termin został użyty po raz pierwszy przez brytyjskiego przedsiębiorcę i założyciela startupów Kevina Ashtona w 1999 roku, podczas prezentacji dla Procter & Gamble[2]. Określono nim „sieć połączonych ze sobą przedmiotów”.
+
+Istnieje także termin Internet Wszechrzeczy (ang. Internet of Everything – IoE), będący określeniem na sieć ludzi, procesów, danych i rzeczy podłączonych do Internetu. Termin ten powstał pierwotnie w firmie CISCO i jest obecnie często stosowany zamiennie z terminem Internet przedmiotów. Powstał także licznik zliczający przybliżoną liczbę elementów Internetu Wszechrzeczy[3].
+
+Szacuje się, że w 2020 roku podłączonych do sieci będzie od 25 mld do 50 mld urządzeń[4][5]. W 2016 roku wartość rynku IoT szacuje się na 200 mld dolarów[6], a w 2019 roku na 1,3 bln dolarów[7].
+
+Cel
+Podstawowym celem Internetu rzeczy jest stworzenie inteligentnych przestrzeni, tj. inteligentnych miast, transportu, produktów, budynków, systemów energetycznych, systemów zdrowia czy związanych z życiem codziennym. Podstawą rozwoju inteligentnych przestrzeni jest dostarczenie technologii, która zapewni ich realizację[8].
