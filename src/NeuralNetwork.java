@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class NeuralNetwork {
     Set<Map.Entry<String, List<double[]>>> trainingMapEntrySet;
@@ -26,12 +23,18 @@ public class NeuralNetwork {
 
     public String guess(String text) {
         StringBuilder sb = new StringBuilder();
+        Map<Perceptron, Double> sums = new HashMap<>();
+        for (Perceptron perceptron : perceptrons) {
+            sums.put(perceptron, perceptron.getSum(getVectorFromString(text)));
+        }
+        Perceptron winner = Collections.max(sums.entrySet(), Map.Entry.comparingByValue()).getKey();
         for (int i = 0; i < perceptrons.size(); i++) {
             Perceptron perceptron = perceptrons.get(i);
-            if (perceptron.guess(getVectorFromString(text)) == 1)
-                sb.append(i + 1).append(". Język ").append(perceptron.getLanguage()).append("\n");
-            else
-                sb.append(i + 1).append(". Język nie ").append(perceptron.getLanguage()).append("\n");
+            if (perceptron.getLanguage().equals(winner.getLanguage())) {
+                sb.append(i + 1).append(". ").append(perceptron.getLanguage().toUpperCase()).append("\n");
+            } else {
+                sb.append(i + 1).append(". nie ").append(perceptron.getLanguage()).append("\n");
+            }
         }
         return sb.toString();
     }

@@ -25,6 +25,14 @@ public class Perceptron {
         return sum >= 0 ? 1 : 0;
     }
 
+    public double getSum(double[] inputs) {
+        double sum = 0;
+        for (int i = 0; i < weights.length; i++) {
+            sum += inputs[i] * weights[i];
+        }
+        return sum;
+    }
+
     public void train(List<double[]> vectors, String trainingLanguage) {
         for (double[] vector : vectors) {
             int target;
